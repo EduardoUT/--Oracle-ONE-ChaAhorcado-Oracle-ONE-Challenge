@@ -1,0 +1,435 @@
+*, 
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --font-family: 'Segoe UI', sans-serif;
+    --font-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--font-family);
+}
+
+h1 {
+    font-size: 4em;
+}
+
+p {
+    font-size: 1em;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), 
+    url("../img/fondodos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.main-content {
+    display: none;
+}
+
+.seccion-bienvenida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)), 
+    url("../img/nuremberg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    color: var(--font-color);
+}
+
+#instrucciones {
+    min-width: 45%;
+    padding: 1em;
+    margin: 1em 2em;
+    text-align: center;
+}
+
+.seccion-bienvenida 
+#dsc-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#contact {
+    position: fixed;
+    bottom: 0em;
+    right: 1em;
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    background-color: hsl(0, 0%, 0%);
+    padding: 0.2em;
+    border-radius: 2em;
+    color: white;
+}
+
+.seccion-bienvenida
+.div-box {
+    min-width: 60%;
+    width: 60%;
+}
+
+.links-footer {
+    transition: all 0.2s ease-out;
+}
+  
+.links-footer:hover {
+    transform: translate(0, 0.3em);
+}
+
+.iconos {
+    width: 30px;
+    margin: 0.2em;
+}
+
+@media only screen and (max-width: 926px) {
+    #instrucciones {
+        margin: 0.2em 0.6em;
+    }
+
+    .seccion-bienvenida
+    .div-box {
+        padding: 0.2em;
+        min-width: 60%;
+        width: 90%;
+    }
+    
+    #contact {
+        padding: 0.3em;
+        bottom: 0em;
+    }
+
+    .iconos {
+        width: 25px;
+    }
+}
+
+.div-box {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: center;
+}
+
+.btn {
+    display: flex;
+    width: 160px;
+    height: 50px;
+    background-color: black;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.4s ease-out;
+    border-radius: 0.4em;
+    border-color: #09dd8c;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgb(75,142,144);
+    background: linear-gradient(90deg, rgba(75,142,144,1) 0%, rgba(66,139,100,1) 50%, rgba(68,148,94,1) 100%);
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(255, 255, 255, 0.4);
+}
+
+.animation-code {
+    display: flex;
+    font-size: 1em;
+    margin-left: 0.5em;
+    transition: all 0.3s ease-out;
+}
+
+.btn:hover .animation-code {
+    transform: translate(4.5px);
+}
+
+.input-texto {
+    height: 2.6em;
+    margin-bottom: 1em;
+    font-size: 0.8em;
+    font-family: var(--font-family);
+    max-width: 60%;
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 0.4em;
+}
+
+.input-texto:focus {
+    border-color: #09dd8c;
+    outline: 0 none;
+}
+
+.canvas-responsive {
+    max-width: 700px;
+    width: 100%;
+    max-height: 390px;
+    height: 100%;
+    background-color: inherit;
+    box-shadow: 0.5em 0.1em 0.5em 0.1em rgba(7, 7, 7, 0.712);
+}
+
+.canvas-responsive 
+#ahorcado {
+    width: inherit;
+    height: inherit;    
+}
+
+.hide-header {
+    display: none;
+}
+
+.show-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    margin: auto;
+    padding: 1em;
+}
+
+.show-main-content
+.menu-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+.show-main-content
+.cerrar-perdiste {
+    display: flex;
+    width: 130px;
+    height: 50px;
+    background-color: black;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.4s ease-out;
+    border-radius: 0.4em;
+    border-color: #09dd8c;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.cerrar-perdiste:hover {
+    background: rgb(75,142,144);
+    background: linear-gradient(90deg, rgba(75,142,144,1) 0%, rgba(66,139,100,1) 50%, rgba(68,148,94,1) 100%);
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(255, 255, 255, 0.4);
+}
+
+.show-main-content
+.cerrar {
+    display: flex;
+    width: 130px;
+    height: 50px;
+    background-color: black;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: all 0.4s ease-out;
+    border-radius: 0.4em;
+    border-color: #09dd8c;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.cerrar:hover {
+    background: rgb(75,142,144);
+    background: linear-gradient(90deg, rgba(75,142,144,1) 0%, rgba(66,139,100,1) 50%, rgba(68,148,94,1) 100%);
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.7);
+    box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(255, 255, 255, 0.4);
+}
+
+.show-main-content
+.btn
+.go-home-btn {
+    width: 20px;
+}
+
+.letra-ingresada {
+    background-color: transparent;
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    border: 0;
+    margin-bottom: 0.5em;
+    color: white;
+}
+
+.letra-ingresada:focus {
+    outline: 0 none;
+}
+
+
+
+/*
+Para ajustar los tamaños del grid sin
+generar desbordamiento, ajustar las siguientes
+propiedades de los selectores con un mismo valor:
+.palabra -> padding
+.mis-palabras -> font-size, y width
+
+Para centrar los recuadros donde "n" es cualquier valor:
+.palabras -> grid-template.columns: repeat(auto-fill, minmax(n, 1fr));
+.palabras -> gap: n-1;
+*/
+
+.palabras {
+    list-style-type: none;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(2em, 1fr));
+    grid-template-rows: 1fr;
+    gap: 1em;
+    padding: 1.5em;
+    color: white;
+}
+
+.mis-palabras {
+    height: 2em;
+    width: 1.5em;
+    padding: 0.6em;
+    border: solid 0.1em rgb(255, 250, 250);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-family: var(--font-family);
+}
+
+.hidde {
+    display: none;
+}
+
+.letras-erroneas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+    padding: 0.8em;
+}
+
+.letras-erroneas
+.letras-fallidas {
+    text-align: center;
+}
+
+.mensaje-ganaste-hidden {
+    display: none;
+    opacity: 0;
+}
+
+.mensaje-perdiste-hidden {
+    display: none;
+}
+
+.show-mensaje-ganaste {
+    position: absolute;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #52c234, #061700); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: all 0.4s ease-out;
+    
+}
+
+.show-mensaje-ganaste
+p {
+    color: var(--font-color);
+    font-size: 4em;
+    text-align: center;
+}
+
+.show-mensaje-perdiste {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #870000, #190a05); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+.show-mensaje-perdiste
+p {
+    color: var(--font-color);
+    font-size: 4em;
+    text-align: center;
+}
+
+.gif {
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 738px) {
+    .canvas-responsive {
+        height: 290px;
+    }
+
+    .show-mensaje-ganaste {
+        justify-content: flex-start;
+    }
+
+    .show-mensaje-perdiste {
+        justify-content: flex-start;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    
+    .show-main-content {
+        padding-top: 0;
+    }
+
+    .canvas-responsive {
+        height: 190px;
+    }
+    
+
+}

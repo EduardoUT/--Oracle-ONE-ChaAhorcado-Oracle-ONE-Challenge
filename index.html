@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X.UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="logo/programacion-web.png">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
+    <title>Juego del Ahorcado</title>
+</head>
+
+<body>
+    <header class="seccion-bienvenida">
+        <h1>Ahorcado</h1>
+        <div id="instrucciones">
+            <p>
+                ¡Jugador! Haz sido condenado(a) por el rey &#128081; a la horca.<br>
+                <strong>Instrucciones:</strong><br>
+                1. Da click en Iniciar Juego, ¡el verdugo se aproxima!.<br>
+                2. Usa las letras de tu teclado para poder escribir una letra.
+            </p>
+        </div>
+        <div class="div-box">
+            <button class="btn" id="iniciar-juego">
+                Iniciar Juego
+                <div class="animation-code">
+                    &#62;
+                </div>
+            </button>
+        </div>
+        <div class="div-box">
+            <input type="text" class="input-texto" id="nueva-palabra" placeholder="Escriba una nueva palabra..."
+                maxlength="22">
+            <button class="btn" id="agregar-palabra">
+                Agregar Palabra
+            </button>
+        </div>
+        <div id="dsc-img">
+            <p>Puente del Verdugo, Nuremberg.</p>
+        </div>
+    </header>
+    <div id="contact">
+        <p>Eduardo Reyes Hernández |</p>
+        <a href="https://www.linkedin.com/in/eduardo-reyes-hernández-3040471aa/" target="_blank" class="links-footer">
+            <img src="img/linkedin.png" class="iconos">
+        </a>
+        <a href="https://github.com/EduardoUT" target="_blank" class="links-footer">
+            <img src="img/github.png" class="iconos">
+        </a>
+    </div>
+    <div id="container">
+
+        <div class="main-content">
+            <input type="text" class="letra-ingresada" id="letra-ingresada" maxlength="1"
+                placeholder="Ingresa una letra aquí...">
+            <div class="canvas-responsive">
+                <canvas id="ahorcado"></canvas>
+            </div>
+            <div class="menu-buttons">
+                <div class="letras-erroneas">
+                    <p class="letras-fallidas"></p>
+                </div>
+                <button class="btn" id="aleatoria">
+                    Aleatoria
+                </button>
+                <button class="btn" id="go-home">
+                    <img src="logo/casa.png" class="go-home-btn">
+                </button>
+            </div>
+            <ul class="palabras"></ul>
+            
+            <div class="mensaje-ganaste-hidden">
+                <p>Felicidades, haz ganado. &#128512;</p>
+                <img src="gifs/the-it-crowd.gif" class="gif">
+                <button class="cerrar" id="cerrar-ganaste">
+                    Cerrar
+                </button>
+            </div>
+
+            <div class="mensaje-perdiste-hidden">
+                <p>Haz perdido &#128542;</p>
+                <img src="gifs/you-lost.gif" class="gif">
+                <p class="respuesta"></p>
+                <button class="cerrar" id="cerrar-perdiste">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+<script src="js/main.js"></script>
+<script src="js/eventos.js"></script>
+<script src="js/validar-texto.js"></script>
+<script src="js/canvas.js"></script>
+<script src="js/ahorcado.js"></script>
+
+
+</html>
