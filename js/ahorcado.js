@@ -90,7 +90,7 @@ function dibujarLetrasIncorrectas(palabraIngresada) {
 function dibujarAhorcado(intentoFallido, palabraIngresada) {
     if (intentoFallido) {
         dibujarLetrasIncorrectas(palabraIngresada);
-        if (intentos == 1){
+        if (intentos == 1) {
             dibujarBase();
         } else if (intentos == 2) {
             dibujarSoporteSoga();
@@ -115,11 +115,15 @@ function dibujarAhorcado(intentoFallido, palabraIngresada) {
 function finJuego(letrasAcertadas, intentos) {
     if (letrasAcertadas.length == palabraAleatoria.length) {
         //alert("Haz ganao :D");
-        mostrarMensajeGanaste();
+        setTimeout(function () {
+            mostrarMensajeGanaste();
+        }, 1000);
     }
 
     if (intentos == 9) {
-        mostrarMensajePerdiste();
+        setTimeout(function () {
+            mostrarMensajePerdiste();
+        }, 1000);
     }
 }
 
