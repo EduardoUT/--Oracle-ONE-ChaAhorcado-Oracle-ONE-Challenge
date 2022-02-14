@@ -437,6 +437,7 @@ p {
     .canvas-responsive {
         height: 190px;
     }
+
     .palabras {
         grid-template-columns: repeat(auto-fill, minmax(1em, 1fr));
         grid-template-rows: 1fr;
@@ -451,31 +452,4 @@ p {
         padding: 0.2em;
         height: 1.3em;
     }
-    /*
-    .palabras {
-    list-style-type: none;
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(2em, 1fr));
-    grid-template-rows: 1fr;
-    gap: 1em;
-    padding: 1.5em;
-    color: white;
-}
-
-.mis-palabras {
-    height: 2em;
-    width: 1.5em;
-    padding: 0.6em;
-    border: solid 0.1em rgb(255, 250, 250);
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    font-family: var(--font-family);
-}
-    */
 }
