@@ -1,6 +1,5 @@
 var btnIniciarJuego = document.querySelector("#iniciar-juego");
 var btnGoHome = document.querySelector("#go-home");
-var letraUsuario = document.querySelector("#letra-ingresada");
 var btnAleatoria = document.querySelector("#aleatoria");
 var btnCerrarGanaste = document.querySelector("#cerrar-ganaste");
 var btnCerrarPerdiste = document.querySelector("#cerrar-perdiste");
@@ -30,19 +29,7 @@ btnGoHome.addEventListener("click", function () {
     intentos = 0;
 });
 
-letraUsuario.addEventListener("input", function () {
 
-    var letraEntrada;
-        letraEntrada = validarCampoLetraIngresada();
-        if(letraEntrada.length > 1) {
-            letraEntrada = letraEntrada.value.slice(0, 1);
-            if (letraEntrada != "") {
-                dibujarLetra(letraEntrada);
-            }
-        }
-        
-    
-});
 
 btnAleatoria.addEventListener("click", function () {
     generarJuego();
@@ -56,7 +43,7 @@ btnCerrarGanaste.addEventListener("click", function () {
     cerrarMensajeGanaste.classList.remove("show-mensaje-ganaste");
     cerrarMensajeGanaste.classList.add("mensaje-ganaste-hidden");
     generarJuego();
-    limpiarCampo(letraUsuario);
+    //limpiarCampo(letraUsuario);
 });
 
 btnCerrarPerdiste.addEventListener("click", function () {
@@ -64,5 +51,5 @@ btnCerrarPerdiste.addEventListener("click", function () {
     cerrarMensajePerdiste.classList.remove("show-mensaje-perdiste");
     cerrarMensajePerdiste.classList.add("mensaje-perdiste-hidden");
     generarJuego();
-    limpiarCampo(letraUsuario);
+    //limpiarCampo(letraUsuario);
 });
