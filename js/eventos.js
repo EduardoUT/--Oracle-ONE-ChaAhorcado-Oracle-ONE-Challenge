@@ -33,11 +33,15 @@ btnGoHome.addEventListener("click", function () {
 letraUsuario.addEventListener("input", function () {
 
     var letraEntrada;
-    letraEntrada = validarCampoLetraIngresada();
+        letraEntrada = validarCampoLetraIngresada();
 
-    if (letraEntrada != "") {
-        dibujarLetra(letraEntrada);
-    }
+        if(letraEntrada.length >= 0 && letraEntrada.length <= 1) {
+            if (letraEntrada != "") {
+                dibujarLetra(letraEntrada);
+            }
+        }
+        
+    
 });
 
 btnAleatoria.addEventListener("click", function () {
