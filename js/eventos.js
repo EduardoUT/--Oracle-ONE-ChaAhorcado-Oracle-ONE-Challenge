@@ -43,7 +43,7 @@ btnCerrarGanaste.addEventListener("click", function () {
     cerrarMensajeGanaste.classList.remove("show-mensaje-ganaste");
     cerrarMensajeGanaste.classList.add("mensaje-ganaste-hidden");
     generarJuego();
-    //limpiarCampo(letraUsuario);
+    limpiarCampo(campoLetraIngresada);
 });
 
 btnCerrarPerdiste.addEventListener("click", function () {
@@ -51,5 +51,5 @@ btnCerrarPerdiste.addEventListener("click", function () {
     cerrarMensajePerdiste.classList.remove("show-mensaje-perdiste");
     cerrarMensajePerdiste.classList.add("mensaje-perdiste-hidden");
     generarJuego();
-    //limpiarCampo(letraUsuario);
+    limpiarCampo(campoLetraIngresada);
 });
