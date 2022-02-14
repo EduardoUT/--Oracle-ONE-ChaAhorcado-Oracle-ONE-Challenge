@@ -66,7 +66,7 @@ function dibujarLetra(palabraUsuario, palabraAleatoria) {
             }
         }
     }
-    dibujarAhorcado(palabraEquivocada, palabraUsuario);
+    dibujarAhorcado(palabraEquivocada, palabraUsuario, coloresCanvas);
     finJuego(letrasAcertadas, intentos, palabraAleatoria);
 }
 
@@ -79,27 +79,27 @@ function dibujarLetrasIncorrectas(palabraIngresada) {
     }
 }
 
-function dibujarAhorcado(intentoFallido, palabraIngresada) {
+function dibujarAhorcado(intentoFallido, palabraIngresada, color) {
     if (intentoFallido) {
         dibujarLetrasIncorrectas(palabraIngresada);
         if (intentos == 1) {
-            dibujarBase();
+            dibujarBase(color);
         } else if (intentos == 2) {
-            dibujarSoporteSoga();
+            dibujarSoporteSoga(color);
         } else if (intentos == 3) {
-            dibujarCuerda();
+            dibujarCuerda(color);
         } else if (intentos == 4) {
-            dibujarCabeza();
+            dibujarCabeza(color);
         } else if (intentos == 5) {
-            dibujarCuerpo();
+            dibujarCuerpo(color);
         } else if (intentos == 6) {
-            dibujarBrazoDerecho();
+            dibujarBrazoDerecho(color);
         } else if (intentos == 7) {
-            dibujarBrazoIzquierdo();
+            dibujarBrazoIzquierdo(color);
         } else if (intentos == 8) {
-            dibujarPieDerecho();
+            dibujarPieDerecho(color);
         } else if (intentos == 9) {
-            dibujarPieIzquierdo();
+            dibujarPieIzquierdo(color);
         }
     }
 }
