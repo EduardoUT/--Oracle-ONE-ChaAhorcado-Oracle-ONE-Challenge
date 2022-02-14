@@ -34,8 +34,8 @@ letraUsuario.addEventListener("input", function () {
 
     var letraEntrada;
         letraEntrada = validarCampoLetraIngresada();
-
-        if(letraEntrada.length >= 0 && letraEntrada.length <= 1) {
+        if(letraEntrada.length > 1) {
+            letraEntrada = letraEntrada.value.slice(0, 1);
             if (letraEntrada != "") {
                 dibujarLetra(letraEntrada);
             }
