@@ -106,7 +106,6 @@ function dibujarAhorcado(intentoFallido, palabraIngresada) {
 
 function finJuego(letrasAcertadas, intentos, palabraAleatoria) {
     if (letrasAcertadas.length == palabraAleatoria.length) {
-        //alert("Haz ganao :D");
         setTimeout(function () {
             mostrarMensajeGanaste();
         }, 1000);
