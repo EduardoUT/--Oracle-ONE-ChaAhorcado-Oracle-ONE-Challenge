@@ -1,25 +1,23 @@
+var elementoUl = document.querySelector(".palabras");
 var pLetrasFallidas = document.querySelector(".letras-fallidas");
+var array = ["ESCUELA", "PROGRAMACION", "ALURA", "ORACLE", "AMISTAD",
+        "LATINOAMERICA", "VALORES", "JAVASCRIPT", "MEDIEVAL", "HORARIO",
+        "SALUD", "OTORRINOLARINGOLOGO", "ESTERNOCLEIDOMASTOIDEO", "ROCK", "METAL",
+        "PALMERA", "ESCULTURA", "ARTE", "ANTICONSTITUCIONALIDAD", "REVOLUCION"];
 var palabraAleatoria;
 var letrasFallidas = [];
 var letrasAcertadas = [];
 var intentos = 0;
 
 
-function generarPalabraAleatoria() {
-
-    var array = ["ESCUELA", "PROGRAMACION", "ALURA", "ORACLE", "AMISTAD",
-        "LATINOAMERICA", "VALORES", "JAVASCRIPT", "MEDIEVAL", "HORARIO",
-        "SALUD", "OTORRINOLARINGOLOGO", "ESTERNOCLEIDOMASTOIDEO", "ROCK", "METAL",
-        "PALMERA", "ESCULTURA", "ARTE", "ANTICONSTITUCIONALIDAD", "REVOLUCION"];
-
-    var palabraAleatoria = array[Math.floor(Math.random() * array.length)];
-    var palabraSeparada = splitPalabra(palabraAleatoria);
+function generarPalabraAleatoria(array) {
+    var palabraRandom = array[Math.floor(Math.random() * array.length)];
+    var palabraSeparada = splitPalabra(palabraRandom);
 
     return palabraSeparada;
 }
 
 function splitPalabra(palabra) {
-
     var separarPalabra = palabra;
     separarPalabra = palabra.split("");
 
@@ -27,8 +25,6 @@ function splitPalabra(palabra) {
 }
 
 function crearElementosLi(palabraAleatoria) {
-
-    var elementoUl = document.querySelector(".palabras");
     var nuevaLista;
 
     palabraAleatoria.forEach(function () {
@@ -39,23 +35,20 @@ function crearElementosLi(palabraAleatoria) {
 }
 
 function limpiarElementosLi() {
-
     var listaExistente = document.querySelectorAll("li");
+
     listaExistente.forEach(function (lista) {
         lista.remove();
     });
 
 }
 
-function dibujarLetra(palabraUsuario) {
-
+function dibujarLetra(palabraUsuario, palabraAleatoria) {
     var elementoLi = document.querySelectorAll(".mis-palabras");
     var palabraEquivocada = true;
     var posicionPalabraAleatoria;
     var valorPalabraAleatoria;
     var textNode;
-
-    console.log(palabraAleatoria);
 
     for (var i = 0; i < palabraAleatoria.length; i++) {
         if (palabraUsuario == palabraAleatoria[i]) {
@@ -73,9 +66,8 @@ function dibujarLetra(palabraUsuario) {
             }
         }
     }
-
     dibujarAhorcado(palabraEquivocada, palabraUsuario);
-    finJuego(letrasAcertadas, intentos);
+    finJuego(letrasAcertadas, intentos, palabraAleatoria);
 }
 
 function dibujarLetrasIncorrectas(palabraIngresada) {
@@ -112,7 +104,7 @@ function dibujarAhorcado(intentoFallido, palabraIngresada) {
     }
 }
 
-function finJuego(letrasAcertadas, intentos) {
+function finJuego(letrasAcertadas, intentos, palabraAleatoria) {
     if (letrasAcertadas.length == palabraAleatoria.length) {
         //alert("Haz ganao :D");
         setTimeout(function () {
