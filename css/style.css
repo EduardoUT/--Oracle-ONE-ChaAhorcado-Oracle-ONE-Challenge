@@ -450,6 +450,8 @@ p {
         border-top: solid 0.1em rgb(255, 250, 250);
         font-size: 1.2em;
         width: 1.2em;
+        padding: 0.2em;
+        height: 1.3em;
     }
     /*
     .palabras {
