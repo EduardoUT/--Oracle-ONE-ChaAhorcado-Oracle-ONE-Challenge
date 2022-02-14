@@ -1,16 +1,16 @@
 
 var lienzo = document.querySelector("canvas");
 var pincel = lienzo.getContext("2d");
+var colores = ["rgb(12, 12, 12)","rgb (255,255,255)"];
 
-
-function dibujarLienzo() {
-    pincel.fillStyle = "white";
+function dibujarLienzo(color) {
+    pincel.fillStyle = color[1];//"white";
     pincel.fillRect(0, 0, 700, 390);
 }
 
 
-function dibujarBase() {
-    pincel.fillStyle = "rgb(12, 12, 12)";
+function dibujarBase(color) {
+    pincel.fillStyle = color[0];
     pincel.beginPath();
     pincel.moveTo(20, 140);
     pincel.lineTo(80, 140);
@@ -18,18 +18,18 @@ function dibujarBase() {
     pincel.closePath();
     pincel.fill();
 
-    pincel.fillStyle = "rgb(12, 12, 12)";
+    pincel.fillStyle = color[0];
     pincel.fillRect(47.5, 10, 5, 120);
 }
 
-function dibujarSoporteSoga() {
+function dibujarSoporteSoga(color) {
     //Palo superior
-    pincel.fillStyle = "rgb(12, 12, 12)";
+    pincel.fillStyle = color[0];
     pincel.fillRect(30, 10, 120, 5);
 
     //Triengulos
     pincel.beginPath();
-    pincel.fillStyle = "black";
+    pincel.fillStyle = color[0];
     pincel.moveTo(51, 61);
     pincel.lineTo(51, 15);
     pincel.lineTo(120, 15);
@@ -38,7 +38,7 @@ function dibujarSoporteSoga() {
 
     //Triangulos
     pincel.beginPath();
-    pincel.fillStyle = "white";
+    pincel.fillStyle = color[1];//"white";
     pincel.moveTo(52.5, 52);
     pincel.lineTo(52.5, 15);
     pincel.lineTo(110, 15);
@@ -46,56 +46,56 @@ function dibujarSoporteSoga() {
     pincel.closePath();
 }
 
-function dibujarCuerda() {
-    pincel.fillStyle = "rgb(12, 12, 12)";
+function dibujarCuerda(color) {
+    pincel.fillStyle = color[0];
     pincel.fillRect(133, 10, 2, 28);
 }
 
-function dibujarCabeza() {
+function dibujarCabeza(color) {
     pincel.beginPath();
-    pincel.fillStyle = "white";
-    pincel.strokeStyle = "black";
+    pincel.fillStyle = color[1];//"white";
+    pincel.strokeStyle = color[0];
     pincel.arc(134, 48, 10, 0, 2 * Math.PI);
     pincel.fill();
     pincel.stroke();
     pincel.closePath();
 }
 
-function dibujarCuerpo() {
-    pincel.fillStyle = "rgb(12, 12, 12)";
+function dibujarCuerpo(color) {
+    pincel.fillStyle = color[0];
     pincel.fillRect(133, 59, 2, 50);
 }
 
-function dibujarBrazoDerecho() {
+function dibujarBrazoDerecho(color) {
     pincel.beginPath();
-    pincel.strokeStyle = "black"
+    pincel.strokeStyle = color[0];
     pincel.moveTo(133, 70);
     pincel.lineTo(120, 95);
     pincel.stroke();
     pincel.closePath();
 }
 
-function dibujarBrazoIzquierdo() {
+function dibujarBrazoIzquierdo(color) {
     pincel.beginPath();
-    pincel.strokeStyle = "rgb(12, 12, 12)";
+    pincel.strokeStyle = color[0];
     pincel.moveTo(135, 70);
     pincel.lineTo(150, 95);
     pincel.stroke();
     pincel.closePath();
 }
 
-function dibujarPieDerecho() {
+function dibujarPieDerecho(color) {
     pincel.beginPath();
-    pincel.strokeStyle = "rgb(12, 12, 12)";
+    pincel.strokeStyle = color[0];
     pincel.moveTo(134, 109);
     pincel.lineTo(115, 130);
     pincel.stroke();
     pincel.closePath();
 }
 
-function dibujarPieIzquierdo() {
+function dibujarPieIzquierdo(color) {
     pincel.beginPath();
-    pincel.strokeStyle = "rgb(12, 12, 12)";
+    pincel.strokeStyle = color[0];
     pincel.moveTo(134, 109);
     pincel.lineTo(155, 130);
     pincel.stroke();
