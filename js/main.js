@@ -1,5 +1,5 @@
 function generarJuego() {
-    palabraAleatoria = generarPalabraAleatoria(array);
+    palabraAleatoriaActual = generarPalabraAleatoria(array);
     letrasAcertadas = [];
     letrasFallidas = [];
     pLetrasFallidas.textContent = "";
@@ -7,7 +7,7 @@ function generarJuego() {
     limpiarCanvas();
     dibujarLienzo(coloresCanvas);
     limpiarElementosLi();
-    crearElementosLi(palabraAleatoria);
+    crearElementosLi(palabraAleatoriaActual);
     posicionarPuntero(campoLetraIngresada);
 }
 
