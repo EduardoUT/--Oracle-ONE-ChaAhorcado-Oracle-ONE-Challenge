@@ -29,8 +29,6 @@ btnGoHome.addEventListener("click", function () {
     intentos = 0;
 });
 
-
-
 btnAleatoria.addEventListener("click", function () {
     generarJuego();
     limpiarCampo(campoLetraIngresada);
