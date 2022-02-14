@@ -33,10 +33,12 @@ campoLetraIngresada.addEventListener("input", function () {
     textoMayusculas = textoValidado.toUpperCase();
     this.value = textoMayusculas;
 
-    setTimeout(function () {
-        dibujarLetra(textoMayusculas);
-        limpiarCampo(campoLetraIngresada);
-    }, 300);
+    if(textoMayusculas != "") {
+        setTimeout(function () {
+            dibujarLetra(textoMayusculas);
+            limpiarCampo(campoLetraIngresada);
+        }, 300);
+    }
 });
 
 function posicionarPuntero(campo) {
