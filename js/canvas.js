@@ -16,7 +16,6 @@ function dibujarBase(color) {
     pincel.lineTo(50, 120);
     pincel.closePath();
     pincel.fill();
-
     pincel.fillStyle = color[0];
     pincel.fillRect(47.5, 10, 5, 120);
 }
