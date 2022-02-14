@@ -15,7 +15,7 @@ btnIniciarJuego.addEventListener("click", function () {
     ocultarSeccionHeader();
     mostrarSeccionJuego();
     generarJuego();
-    dibujarLienzo();
+    dibujarLienzo(coloresCanvas);
     limpiarCampo(campoAgregar);
     intentos = 0;
 });
