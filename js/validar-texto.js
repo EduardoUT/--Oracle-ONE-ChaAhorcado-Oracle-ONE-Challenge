@@ -3,7 +3,27 @@ var campoLetraIngresada = document.querySelector("#letra-ingresada");
 var filtro = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
 
 campoAgregar.addEventListener("input", validarCampoAgregar);
-campoLetraIngresada.addEventListener("input", validarCampoLetraIngresada);
+
+campoLetraIngresada.addEventListener("input", function () {
+
+    var textoMayusculas = "";
+    var textoValidado = "";
+    var valorCampo = this.value;
+
+    for (var j = 0; j < filtro.length; j++) {
+        if (filtro[j] == valorCampo) {
+            textoValidado += valorCampo;
+        }
+    }
+
+    textoMayusculas = textoValidado.toUpperCase();
+    this.value = textoMayusculas;
+
+
+    if (textoMayusculas != "") {
+        dibujarLetra(textoMayusculas);
+    }
+});
 
 function validarCampoAgregar() {
 
@@ -23,24 +43,6 @@ function validarCampoAgregar() {
     campoAgregar.value = textoMayusculas;
 }
 
-function validarCampoLetraIngresada() {
-
-    var textoMayusculas = "";
-    var textoValidado = "";
-    var valorCampo = campoLetraIngresada.value;
-
-    for (var i = 0; i < valorCampo.length; i++) {
-        for (var j = 0; j < filtro.length; j++) {
-            if (filtro[j] == valorCampo[i]) {
-                textoValidado += valorCampo[i];
-            }
-        }
-    }
-    textoMayusculas = textoValidado.toUpperCase();
-    campoLetraIngresada.value = textoMayusculas;
-
-    return textoMayusculas;
-}
 
 function posicionarPuntero(campo) {
     return campo.focus();
