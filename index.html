@@ -33,7 +33,7 @@
         </div>
         <div class="div-box">
             <input type="text" class="input-texto" id="nueva-palabra" placeholder="Escriba una nueva palabra..."
-                maxlength="22">
+                pattern=".{0,23}">
             <button class="btn" id="agregar-palabra">
                 Agregar Palabra
             </button>
@@ -54,7 +54,8 @@
     <div id="container">
 
         <div class="main-content">
-            <input type="text" class="letra-ingresada" id="letra-ingresada" pattern=".{0,1}" placeholder="Ingresa una letra aquí...">
+            <input type="text" class="letra-ingresada" id="letra-ingresada" pattern=".{0,1}"
+                placeholder="Ingresa una letra aquí...">
             <div class="canvas-responsive">
                 <canvas id="ahorcado"></canvas>
             </div>
@@ -70,7 +71,7 @@
                 </button>
             </div>
             <ul class="palabras"></ul>
-            
+
             <div class="mensaje-ganaste-hidden">
                 <p>Felicidades, haz ganado. &#128512;</p>
                 <button class="cerrar" id="cerrar-ganaste">
