@@ -36,7 +36,6 @@ function validarCampoLetraIngresada() {
             }
         }
     }
-
     textoMayusculas = textoValidado.toUpperCase();
     campoLetraIngresada.value = textoMayusculas;
 
