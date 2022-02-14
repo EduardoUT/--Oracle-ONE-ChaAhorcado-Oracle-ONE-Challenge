@@ -1,12 +1,11 @@
 function generarJuego() {
-
     palabraAleatoria = generarPalabraAleatoria(array);
     letrasAcertadas = [];
     letrasFallidas = [];
     pLetrasFallidas.textContent = "";
     intentos = 0;
     limpiarCanvas();
-    dibujarLienzo();
+    dibujarLienzo(coloresCanvas);
     limpiarElementosLi();
     crearElementosLi(palabraAleatoria);
     posicionarPuntero(campoLetraIngresada);
