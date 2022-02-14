@@ -8,7 +8,7 @@ window.addEventListener("load", function () {
     posicionarPuntero(campoAgregar);
     limpiarCampo(campoAgregar);
     limpiarCampo(campoLetraIngresada);
-    palabraAleatoria = generarPalabraAleatoria();
+    palabraAleatoria = generarPalabraAleatoria(array);
 });
 
 btnIniciarJuego.addEventListener("click", function () {
