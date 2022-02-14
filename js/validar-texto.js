@@ -35,7 +35,7 @@ campoLetraIngresada.addEventListener("input", function () {
 
     if(textoMayusculas != "") {
         setTimeout(function () {
-            dibujarLetra(textoMayusculas);
+            dibujarLetra(textoMayusculas, palabraAleatoria);
             limpiarCampo(campoLetraIngresada);
         }, 300);
     }
