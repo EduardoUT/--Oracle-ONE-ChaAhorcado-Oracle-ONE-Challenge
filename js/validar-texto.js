@@ -5,7 +5,7 @@ var filtro = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
 campoAgregar.addEventListener("input", function () {
     var textoMayusculas = "";
     var textoValidado = "";
-    var valorCampo = campoAgregar.value;
+    var valorCampo = this.value;
 
     for (var i = 0; i < valorCampo.length; i++) {
         for (var j = 0; j < filtro.length; j++) {
@@ -16,7 +16,7 @@ campoAgregar.addEventListener("input", function () {
     }
 
     textoMayusculas = textoValidado.toUpperCase();
-    campoAgregar.value = textoMayusculas;
+    this.value = textoMayusculas;
 });
 
 campoLetraIngresada.addEventListener("input", function () {
