@@ -1,6 +1,6 @@
 function generarJuego() {
 
-    palabraAleatoria = generarPalabraAleatoria();
+    palabraAleatoria = generarPalabraAleatoria(array);
     letrasAcertadas = [];
     letrasFallidas = [];
     pLetrasFallidas.textContent = "";
