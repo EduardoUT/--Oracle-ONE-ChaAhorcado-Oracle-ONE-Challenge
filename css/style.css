@@ -441,7 +441,7 @@ p {
         grid-template-columns: repeat(auto-fill, minmax(1em, 1fr));
         grid-template-rows: 1fr;
         gap: 1em;
-        background-color: #09dd8c;
+        background-color: #0929dd;
         padding: 1.2em;
 
     }
