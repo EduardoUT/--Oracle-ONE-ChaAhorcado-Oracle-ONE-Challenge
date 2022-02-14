@@ -1,13 +1,12 @@
 
 var lienzo = document.querySelector("canvas");
 var pincel = lienzo.getContext("2d");
-var colores = ["rgb(12, 12, 12)","rgb (255,255,255)"];
+var coloresCanvas = ["rgb(12, 12, 12)","rgb(255, 255, 255)"];
 
 function dibujarLienzo(color) {
-    pincel.fillStyle = color[1];//"white";
+    pincel.fillStyle = color[1];
     pincel.fillRect(0, 0, 700, 390);
 }
-
 
 function dibujarBase(color) {
     pincel.fillStyle = color[0];
@@ -38,7 +37,7 @@ function dibujarSoporteSoga(color) {
 
     //Triangulos
     pincel.beginPath();
-    pincel.fillStyle = color[1];//"white";
+    pincel.fillStyle = color[1];
     pincel.moveTo(52.5, 52);
     pincel.lineTo(52.5, 15);
     pincel.lineTo(110, 15);
@@ -53,7 +52,7 @@ function dibujarCuerda(color) {
 
 function dibujarCabeza(color) {
     pincel.beginPath();
-    pincel.fillStyle = color[1];//"white";
+    pincel.fillStyle = color[1];
     pincel.strokeStyle = color[0];
     pincel.arc(134, 48, 10, 0, 2 * Math.PI);
     pincel.fill();
