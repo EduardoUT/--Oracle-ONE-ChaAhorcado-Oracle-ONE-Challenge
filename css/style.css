@@ -370,7 +370,6 @@ Para centrar los recuadros donde "n" es cualquier valor:
     .palabras
     .mis-palabras {
         padding: 0.2em;
-        border-top: solid 0.1em rgb(255, 250, 250);
         width: 1.2em;
         height: 1.3em;
         font-size: 1.2em;
