@@ -27,32 +27,33 @@ p {
     color: var(--font-color);
 }
 
-/*Inicio Botones Generales*/
+/*-------Inicio Botones Generales-------*/
+/*Boton con fondo negro y gradiante al pasar el mouse*/
 html
 body
 .btn {
     display: flex;
-    width: 160px;
-    height: 50px;
-    background-color: black;
-    text-decoration: none;
     align-items: center;
     justify-content: center;
-    transition: all 0.4s ease-out;
+    width: 160px;
+    height: 50px;
+    font-size: var(--font-size-buttons);
+    color: var(--font-color);
+    text-decoration: none;
+    background-color: black;
     border-radius: 0.4em;
     border-color: #09dd8c;
-    font-size: var(--font-size-buttons);
+    transition: all 0.4s ease-out;
     cursor: pointer;
-    color: var(--font-color);
 }
 
 .btn:hover {
+    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.7);
     background: rgb(75,142,144);
     background: linear-gradient(90deg, rgba(75,142,144,1) 0%, rgba(66,139,100,1) 50%, rgba(68,148,94,1) 100%);
-    text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.7);
     box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(255, 255, 255, 0.4);
 }
-/*Fin Botones Generales*/
+/*-------Fin Botones Generales-------*/
 
 /*Inicio Elementos Ocultos por JavaScript*/
 html
@@ -87,6 +88,8 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    width: 100vw;
     background-image:linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)), 
@@ -95,15 +98,13 @@ body
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
-    width: 100%;
 }
 
 .seccion-bienvenida
 #instrucciones {
-    min-width: 45%;
     padding: 1em;
     margin: 1em 2em;
+    min-width: 45%;
     text-align: center;
 }
 
@@ -111,8 +112,8 @@ body
 .div-box {
     display: flex;
     flex-direction: column;
-    padding: 1em;
     align-items: center;
+    padding: 1em;
     min-width: 60%;
     width: 60%;
 }
@@ -121,8 +122,8 @@ body
 .btn
 .animation-code {
     display: flex;
-    font-size: var(--font-size);
     margin-left: 0.5em;
+    font-size: var(--font-size);
     transition: all 0.3s ease-out;
 }
 
@@ -134,13 +135,13 @@ body
 
 .div-box
 .input-texto[type="text"] {
-    height: 2.6em;
-    margin-bottom: 1em;
-    font-size: 0.8em;
-    max-width: 60%;
-    width: 100%;
     padding: 0.8em;
     border-radius: 0.4em;
+    margin-bottom: 1em;
+    max-width: 60%;
+    width: 100%;
+    height: 2.6em;
+    font-size: 0.8em;
 }
 
 .div-box
@@ -163,9 +164,9 @@ body
     flex-direction: row;
     align-items: center;
     justify-items: center;
-    background-color: hsl(0, 0%, 0%);
     padding: 0.2em;
     border-radius: 2em;
+    background-color: hsl(0, 0%, 0%);
 }
 
 #contact
@@ -180,8 +181,8 @@ body
 
 #contact
 .iconos {
-    width: 30px;
     margin: 0.2em;
+    width: 30px;
 }
 
 @media only screen and (max-width: 926px) {
@@ -208,8 +209,8 @@ body
 html
 body
 #container {
-    width: 100%;
     margin: 0 auto;
+    width: 100%;
     background-image:linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)), 
@@ -226,20 +227,20 @@ body
     flex-direction: column;
     align-items: center;
     justify-items: center;
+    padding: 1em;
     height: 100vh;
     margin: auto;
-    padding: 1em;
 }
 
 .show-main-content
 .letra-ingresada[type="text"] {
-    background-color: transparent;
-    width: 100%;
-    font-size: 2em;
-    text-align: center;
     border: 0;
     margin-bottom: 0.5em;
+    width: 100%;
+    font-size: 2em;
     color: var(--font-color);
+    text-align: center;
+    background-color: transparent;
 }
 
 .show-main-content
@@ -249,12 +250,12 @@ body
 
 .show-main-content
 .canvas-responsive {
+    box-shadow: 0.5em 0.1em 0.5em 0.1em rgba(7, 7, 7, 0.712);
     max-width: 700px;
     width: 100%;
     max-height: 390px;
     height: 100%;
     background-color: inherit;
-    box-shadow: 0.5em 0.1em 0.5em 0.1em rgba(7, 7, 7, 0.712);
 }
 
 .canvas-responsive
@@ -291,8 +292,8 @@ body
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
     margin-top: 0.5em;
+    width: 100%;
 }
 
 .show-main-content
@@ -327,28 +328,28 @@ Para centrar los recuadros donde "n" es cualquier valor:
 */
 .show-main-content
 .palabras {
-    list-style-type: none;
     display: grid;
-    width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(2em, 1fr));
     grid-template-rows: 1fr;
     gap: 1em;
     padding: 1.5em;
+    width: 100%;
+    list-style-type: none;
 }
 
 .show-main-content
 .palabras
 .mis-palabras {
-    height: 2em;
-    width: 1.5em;
-    padding: 0.6em;
-    border: solid 0.1em rgb(255, 250, 250);
-    border-top: 0;
-    border-right: 0;
-    border-left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0.6em;
+    border-top: 0;
+    border-right: 0;
+    border: solid 0.1em rgb(255, 250, 250);
+    border-left: 0;
+    width: 1.5em;
+    height: 2em;    
     font-size: 1.5em;
 }
 
@@ -365,22 +366,22 @@ Para centrar los recuadros donde "n" es cualquier valor:
     .show-main-content
     .palabras
     .mis-palabras {
-        border-top: solid 0.1em rgb(255, 250, 250);
-        font-size: 1.2em;
-        width: 1.2em;
         padding: 0.2em;
+        border-top: solid 0.1em rgb(255, 250, 250);
+        width: 1.2em;
         height: 1.3em;
+        font-size: 1.2em;
     }
 }
 
 .show-main-content
 .show-mensaje-ganaste {
     position: absolute;
-    display: flex;
     top: 0;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     left: 0;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -396,18 +397,18 @@ Para centrar los recuadros donde "n" es cualquier valor:
 
 .show-mensaje-ganaste
 p {
+    margin: 0.5em;
     font-size: 3em;
     text-align: center;
-    margin: 0.5em;
 }
 
 .show-main-content
 .show-mensaje-perdiste {
     position: absolute;
     top: 0;
+    right: 0;
     bottom: 0;
     left: 0;
-    right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -424,9 +425,9 @@ p {
 
 .show-mensaje-perdiste
 p {
+    margin: 0.5em;
     font-size: 3em;
     text-align: center;
-    margin: 0.5em;
 }
 
 @media only screen and (max-width: 738px) {
