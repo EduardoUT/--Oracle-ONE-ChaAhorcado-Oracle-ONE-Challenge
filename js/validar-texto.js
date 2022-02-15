@@ -16,22 +16,39 @@ var campoLetraIngresada = document.querySelector("#letra-ingresada");
  */
 var filtro = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
 
+
 campoAgregar.addEventListener("input", function () {
     var textoMayusculas = "";
     var textoValidado = "";
     var valorCampo = this.value;
 
+
+
     for (var i = 0; i < valorCampo.length; i++) {
         for (var j = 0; j < filtro.length; j++) {
             if (filtro[j] == valorCampo[i]) {
                 textoValidado += valorCampo[i];
+
             }
         }
     }
 
     textoMayusculas = textoValidado.toUpperCase();
-    this.value = textoMayusculas;
+    /**
+     * Una vez obtenida toda la palabra, evalúo si es
+     * una palabra menor o igual a 23 carácteres y la convierto
+     * a mayúsculas, en caso contrario mando un alert informando
+     * al usuario que excedió el límite y corta el valor excedente del input 
+     * actual.
+     */
+    if (textoValidado.length <= 23) {
+        this.value = textoMayusculas;
+    } else {
+        alert("No puedes ingresar más de 23 carácteres");
+        this.value = this.value.slice(0, 23);
+    }
 });
+
 
 campoLetraIngresada.addEventListener("input", function () {
     var textoMayusculas = "";
@@ -47,7 +64,7 @@ campoLetraIngresada.addEventListener("input", function () {
     textoMayusculas = textoValidado.toUpperCase();
     this.value = textoMayusculas;
 
-    if(textoMayusculas != "") {
+    if (textoMayusculas != "") {
         setTimeout(function () {
             dibujarLetraAcertada(textoMayusculas, palabraAleatoriaActual);
             limpiarCampo(campoLetraIngresada);
