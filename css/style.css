@@ -43,7 +43,7 @@ body
     color: var(--font-color);
     text-decoration: none;
     background-color: black;
-    border-radius: 0.4em;
+    border-radius: 2em;
     border-color: #09dd8c;
     transition: all 0.4s ease-out;
     cursor: pointer;
@@ -343,7 +343,7 @@ Para centrar los recuadros donde "n" es cualquier valor:
     padding: 0.6em;
     border-top: 0;
     border-right: 0;
-    border: solid 0.1em rgb(255, 250, 250);
+    border-bottom: solid 0.1em rgb(255, 250, 250);
     border-left: 0;
     width: 1.5em;
     height: 2em;    
