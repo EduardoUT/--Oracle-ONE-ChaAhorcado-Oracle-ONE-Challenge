@@ -7,8 +7,6 @@
     <meta http-equiv="X.UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="logo/programacion-web.png">
-    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Raleway:wght@500&display=swap"
-        rel="stylesheet">
     <title>Juego del Ahorcado</title>
 </head>
 
@@ -32,7 +30,7 @@
             </button>
         </div>
         <div class="div-box">
-            <input type="text" class="input-texto" id="nueva-palabra" placeholder="Escriba una nueva palabra..."
+            <input class="input-texto" id="nueva-palabra" type="text" placeholder="Escriba una nueva palabra..."
                 maxlength="23">
             <button class="btn" id="agregar-palabra">
                 Agregar Palabra
@@ -44,17 +42,17 @@
     </header>
     <div id="contact">
         <p>Eduardo Reyes Hernández |</p>
-        <a href="https://www.linkedin.com/in/eduardo-reyes-hernández-3040471aa/" target="_blank" class="links-footer">
-            <img src="img/linkedin.png" class="iconos">
+        <a class="links-footer" href="https://www.linkedin.com/in/eduardo-reyes-hernández-3040471aa/" target="_blank">
+            <img class="iconos" src="img/linkedin.png" alt="Linkedin">
         </a>
-        <a href="https://github.com/EduardoUT" target="_blank" class="links-footer">
-            <img src="img/github.png" class="iconos">
+        <a class="links-footer" href="https://github.com/EduardoUT" target="_blank">
+            <img class="iconos" src="img/github.png" alt="GitHub">
         </a>
     </div>
     <div id="container">
 
         <div class="main-content">
-            <input type="text" class="letra-ingresada" id="letra-ingresada" pattern=".{0,1}"
+            <input class="letra-ingresada" id="letra-ingresada" type="text" pattern=".{0,1}"
                 placeholder="Ingresa una letra aquí...">
             <div class="canvas-responsive">
                 <canvas id="ahorcado"></canvas>
@@ -67,7 +65,7 @@
                     Aleatoria
                 </button>
                 <button class="btn" id="go-home">
-                    <img src="logo/casa.png" class="go-home-btn">
+                    <img class="go-home-btn" src="logo/casa.png">
                 </button>
             </div>
             <ul class="palabras"></ul>
