@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+/*Variables generales para tipogrfía, color de fuente, tamaño
+de fuente y tamaño de fuente de botones*/
 :root {
     --font-family: 'Segoe UI', sans-serif;
     --font-color: white;
@@ -148,11 +150,6 @@ body
 .input-texto[type="text"]:focus {
     border-color: #09dd8c;
     outline: 0 none;
-}
-
-.seccion-bienvenida
-#hide-contact {
-    display: none;
 }
 
 .seccion-bienvenida
