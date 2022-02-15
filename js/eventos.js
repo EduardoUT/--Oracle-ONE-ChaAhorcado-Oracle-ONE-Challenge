@@ -4,6 +4,10 @@ var btnAleatoria = document.querySelector("#aleatoria");
 var btnCerrarGanaste = document.querySelector("#cerrar-ganaste");
 var btnCerrarPerdiste = document.querySelector("#cerrar-perdiste");
 
+/**
+ * Las funciones contenidas dentro de este evento,
+ * se ejecutan al cargar la página. 
+ */
 window.addEventListener("load", function () {
     posicionarPuntero(campoAgregar);
     limpiarCampo(campoAgregar);
@@ -36,6 +40,12 @@ btnAleatoria.addEventListener("click", function () {
 
 });
 
+/**
+ * Ambos ventos muestran un mensaje con un gif ocupando toda la página,
+ * contiene:
+ * @function generarJuego();
+ * Para comenzar un juego nuevo al dar click sobre el botón Cerrar.
+ */
 btnCerrarGanaste.addEventListener("click", function () {
     var cerrarMensajeGanaste = document.querySelector(".show-mensaje-ganaste");
     cerrarMensajeGanaste.classList.remove("show-mensaje-ganaste");
