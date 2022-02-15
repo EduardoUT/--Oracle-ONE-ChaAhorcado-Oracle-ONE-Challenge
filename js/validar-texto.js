@@ -1,5 +1,19 @@
+/**
+ * @var campoAgregar:
+ * Selector global para validar input text, limpiar y posicionar puntero.
+ */
 var campoAgregar = document.querySelector("#nueva-palabra");
+
+/**
+ * @var campoLetraIngresada:
+ * Selector global para validar input text, limpiar y posicionar puntero.
+ */
 var campoLetraIngresada = document.querySelector("#letra-ingresada");
+
+/**
+ * @var filtro:
+ * Contiene todos los carácteres admitidos en el teclado.
+ */
 var filtro = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
 
 campoAgregar.addEventListener("input", function () {
@@ -35,16 +49,26 @@ campoLetraIngresada.addEventListener("input", function () {
 
     if(textoMayusculas != "") {
         setTimeout(function () {
-            dibujarLetra(textoMayusculas, palabraAleatoria);
+            dibujarLetraAcertada(textoMayusculas, palabraAleatoriaActual);
             limpiarCampo(campoLetraIngresada);
         }, 300);
     }
 });
 
+/**
+ * Posiciona el puntero en cualquier campo del DOM HTML.
+ * @param {*} campo 
+ * @returns campo.focus();
+ */
 function posicionarPuntero(campo) {
     return campo.focus();
 }
 
+/**
+ * Limpia cualquier campo del DOM HTML.
+ * @param {*} campo 
+ * @returns ""
+ */
 function limpiarCampo(campo) {
     campo.value = "";
 
