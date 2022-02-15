@@ -12,7 +12,9 @@
 
 <body>
     <header class="seccion-bienvenida">
+
         <h1>Ahorcado</h1>
+
         <div id="instrucciones">
             <p>
                 ¡Jugador! Haz sido condenado(a) por el rey &#128081; a la horca.<br>
@@ -21,6 +23,7 @@
                 2. Usa las letras de tu teclado para poder escribir una letra.
             </p>
         </div>
+
         <div class="div-box">
             <button class="btn" id="iniciar-juego">
                 Iniciar Juego
@@ -29,6 +32,7 @@
                 </div>
             </button>
         </div>
+
         <div class="div-box">
             <input class="input-texto" id="nueva-palabra" type="text" placeholder="Escriba una nueva palabra..."
                 maxlength="23">
@@ -36,10 +40,9 @@
                 Agregar Palabra
             </button>
         </div>
-        <div id="dsc-img">
-            <p>Puente del Verdugo, Nuremberg.</p>
-        </div>
+
     </header>
+
     <div id="contact">
         <p>Eduardo Reyes Hernández |</p>
         <a class="links-footer" href="https://www.linkedin.com/in/eduardo-reyes-hernández-3040471aa/" target="_blank">
@@ -49,18 +52,23 @@
             <img class="iconos" src="img/github.png" alt="GitHub">
         </a>
     </div>
+
     <div id="container">
 
         <div class="main-content">
             <input class="letra-ingresada" id="letra-ingresada" type="text" pattern=".{0,1}"
                 placeholder="Ingresa una letra aquí...">
+
             <div class="canvas-responsive">
                 <canvas id="ahorcado"></canvas>
             </div>
+
             <div class="menu-buttons">
+
                 <div class="letras-erroneas">
                     <p class="letras-fallidas"></p>
                 </div>
+
                 <button class="btn" id="aleatoria">
                     Aleatoria
                 </button>
@@ -68,6 +76,7 @@
                     <img class="go-home-btn" src="logo/casa.png">
                 </button>
             </div>
+
             <ul class="palabras"></ul>
 
             <div class="mensaje-ganaste-hidden">
@@ -84,12 +93,13 @@
                     Cerrar
                 </button>
             </div>
-        </div>
 
+        </div>
 
     </div>
 
 </body>
+
 <script src="js/main.js"></script>
 <script src="js/eventos.js"></script>
 <script src="js/validar-texto.js"></script>
