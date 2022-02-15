@@ -51,8 +51,8 @@ body
 
 .btn:hover {
     text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.7);
-    background: rgb(75,142,144);
-    background: linear-gradient(90deg, rgba(75,142,144,1) 0%, rgba(66,139,100,1) 50%, rgba(68,148,94,1) 100%);
+    background: rgb(118,75,144);
+    background: linear-gradient(90deg, rgba(118,75,144,1) 0%, rgba(66,139,92,1) 53%, rgba(68,94,148,1) 100%);
     box-shadow: 0.1em 0.1em 0.1em 0.1em rgba(255, 255, 255, 0.4);
 }
 /*-------Fin Botones Generales-------*/
