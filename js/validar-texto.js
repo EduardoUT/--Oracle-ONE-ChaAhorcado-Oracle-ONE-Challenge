@@ -18,35 +18,47 @@ var filtro = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
 
 
 campoAgregar.addEventListener("input", function () {
-    var textoMayusculas = "";
-    var textoValidado = "";
-    var valorCampo = this.value;
+    
+
+        var textoMayusculas = "";
+        var textoValidado = "";
+        var valorCampo = this.value;
 
 
 
-    for (var i = 0; i < valorCampo.length; i++) {
-        for (var j = 0; j < filtro.length; j++) {
-            if (filtro[j] == valorCampo[i]) {
-                textoValidado += valorCampo[i];
+        for (var i = 0; i < valorCampo.length; i++) {
+            for (var j = 0; j < filtro.length; j++) {
+                if (filtro[j] == valorCampo[i]) {
+                    textoValidado += valorCampo[i];
 
+                }
             }
         }
-    }
 
-    textoMayusculas = textoValidado.toUpperCase();
-    /**
-     * Una vez obtenida toda la palabra, evalúo si es
-     * una palabra menor o igual a 23 carácteres y la convierto
-     * a mayúsculas, en caso contrario mando un alert informando
-     * al usuario que excedió el límite y corta el valor excedente del input 
-     * actual.
-     */
-    if (textoValidado.length <= 23) {
+        
+        /**
+         * Una vez obtenida toda la palabra, evalúo si es
+         * una palabra menor o igual a 23 carácteres y la convierto
+         * a mayúsculas, en caso contrario mando un alert informando
+         * al usuario que excedió el límite y corta el valor excedente del input 
+         * actual.
+         */
+    if ((textoValidado.length <= 23)) {
+        textoMayusculas = textoValidado.toUpperCase();
         this.value = textoMayusculas;
     } else {
-        alert("No puedes ingresar más de 23 carácteres");
+        alert("Límite de carácteres excedido.");
         this.value = this.value.slice(0, 23);
     }
+
+
+    /*
+
+    Usar este fragmento al apretar en agregar palabra
+    if (this.value != "") { } else {
+        alert("Por favor, ecriba una palabra.");
+    }
+    */
 });
 
 
