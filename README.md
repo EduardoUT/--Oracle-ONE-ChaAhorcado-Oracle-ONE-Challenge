@@ -1,6 +1,8 @@
 # Ahorcado-Oracle-ONE-Challenge
 Juego del Ahorcado, un Challenge de Oracle One Education y Alura Latam.
 
+Página Web: https://eduardout.github.io/Ahorcado-Oracle-ONE-Challenge/
+
 **Requisitos:**
 - Debe funcionar solo con letras mayúsculas;
 - No deben ser utilizadas letras con acentos ni caracteres especiales;
@@ -16,4 +18,10 @@ Juego del Ahorcado, un Challenge de Oracle One Education y Alura Latam.
 - La página debe tener un campo para inserción de texto con la finalidad de adicionar nuevas palabras al juego, e un botón "Agregar palabra". 
 
 **Capturas**
-Ventana de Inicio o Home.
+**Vista previa ventana de inicio o home.**
+
+![Vista previa ventana de inicio o home.](https://raw.githubusercontent.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/master/assets/Bienvenida.PNG)
+
+**Vista previa ventana del juego.**
+
+![Vista previa ventana del juego.](https://raw.githubusercontent.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/master/assets/Juego.PNG)
