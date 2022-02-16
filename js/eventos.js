@@ -3,6 +3,7 @@ var btnGoHome = document.querySelector("#go-home");
 var btnAleatoria = document.querySelector("#aleatoria");
 var btnCerrarGanaste = document.querySelector("#cerrar-ganaste");
 var btnCerrarPerdiste = document.querySelector("#cerrar-perdiste");
+var btnAgregarPalabra = document.querySelector("#agregar-palabra");
 
 /**
  * Las funciones contenidas dentro de este evento,
@@ -38,6 +39,24 @@ btnAleatoria.addEventListener("click", function () {
     limpiarCampo(campoLetraIngresada);
     intentos = 0;
 
+});
+
+btnAgregarPalabra.addEventListener("click", function () {
+    var palabraNueva = campoAgregar.value;
+    //var longitudPalabra = palabraNueva.length;
+    if (palabraNueva != "") {
+        if (!array.includes(palabraNueva)) {
+            array.push(palabraNueva);
+            console.log(array.length);
+        } else {
+            alert("Esta palabra ya existe en el juego, intente una nueva.");
+            console.log(array.length);
+            limpiarCampo(campoAgregar);
+        }
+    } else {
+        alert("Por favor, escriba una palabra.");
+        posicionarPuntero(campoAgregar);
+    }
 });
 
 /**
