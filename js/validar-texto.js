@@ -21,7 +21,7 @@ campoAgregar.addEventListener("input", function () {
     
 
         var textoMayusculas = "";
-        var textoValidado = "";
+        var palabraIngresada = "";
         var valorCampo = this.value;
 
 
@@ -29,7 +29,7 @@ campoAgregar.addEventListener("input", function () {
         for (var i = 0; i < valorCampo.length; i++) {
             for (var j = 0; j < filtro.length; j++) {
                 if (filtro[j] == valorCampo[i]) {
-                    textoValidado += valorCampo[i];
+                    palabraIngresada += valorCampo[i];
 
                 }
             }
@@ -43,22 +43,13 @@ campoAgregar.addEventListener("input", function () {
          * al usuario que excedió el límite y corta el valor excedente del input 
          * actual.
          */
-    if ((textoValidado.length <= 23)) {
-        textoMayusculas = textoValidado.toUpperCase();
+    if (palabraIngresada.length <= 23) {
+        textoMayusculas = palabraIngresada.toUpperCase();
         this.value = textoMayusculas;
     } else {
         alert("Límite de carácteres excedido.");
         this.value = this.value.slice(0, 23);
     }
-
-
-    /*
-
-    Usar este fragmento al apretar en agregar palabra
-    if (this.value != "") { } else {
-        alert("Por favor, ecriba una palabra.");
-    }
-    */
 });
 
 
