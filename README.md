@@ -17,4 +17,4 @@ Juego del Ahorcado, un Challenge de Oracle One Education y Alura Latam.
 
 **Capturas**
 Ventana de Inicio o Home.
-https://github.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/blob/master/img/Bienvenida.PNG
+https://raw.githubusercontent.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/tree/master/img/Bienvenida.PNG
