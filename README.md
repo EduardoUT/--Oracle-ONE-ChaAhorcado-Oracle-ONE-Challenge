@@ -9,6 +9,8 @@ Segundo proyecto de Alura Latam, en el que desarrollé un juego de ahorcado con 
 
 Página Web: https://eduardout.github.io/Ahorcado-Oracle-ONE-Challenge/
 
+Publicado en el topic: https://github.com/topics/challengeonejuegoahorcado
+
 **Requisitos:**
 - Debe funcionar solo con letras mayúsculas;
 - No deben ser utilizadas letras con acentos ni caracteres especiales;
