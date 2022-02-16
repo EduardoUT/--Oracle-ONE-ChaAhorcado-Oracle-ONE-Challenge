@@ -58,6 +58,7 @@ btnAgregarPalabra.addEventListener("click", function () {
         } else {
             alert("Esta palabra ya existe en el juego, intente una nueva.");
             limpiarCampo(campoAgregar);
+            posicionarPuntero(campoAgregar);
         }
     } else {
         alert("Por favor, escriba una palabra.");
