@@ -43,14 +43,20 @@ btnAleatoria.addEventListener("click", function () {
 
 btnAgregarPalabra.addEventListener("click", function () {
     var palabraNueva = campoAgregar.value;
-    //var longitudPalabra = palabraNueva.length;
+    /**
+     * Evalúo si la nueva palabra no está vacía
+     */
     if (palabraNueva != "") {
+        /***
+         * Evalúo si la nueva palabra no existe en el arreglo global.
+         */
         if (!array.includes(palabraNueva)) {
             array.push(palabraNueva);
-            console.log(array.length);
+            alert("Palabra ingresada exitosamente.");
+            limpiarCampo(campoAgregar);
+            posicionarPuntero(campoAgregar);
         } else {
             alert("Esta palabra ya existe en el juego, intente una nueva.");
-            console.log(array.length);
             limpiarCampo(campoAgregar);
         }
     } else {
