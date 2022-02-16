@@ -1,5 +1,11 @@
+Challenge Dos de Seis | Formación Lógica de Programación | Juego del Ahorcado
+
 # Ahorcado-Oracle-ONE-Challenge
 Juego del Ahorcado, un Challenge de Oracle One Education y Alura Latam.
+
+Segundo proyecto de Alura Latam, en el que desarrollé un juego de ahorcado con JavaScript, HTML5 y CSS3.
+
+![Challenge Alura Latam + Oracle](https://raw.githubusercontent.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/master/assets/challengeImage.jpg)
 
 Página Web: https://eduardout.github.io/Ahorcado-Oracle-ONE-Challenge/
 
