@@ -16,3 +16,5 @@ Juego del Ahorcado, un Challenge de Oracle One Education y Alura Latam.
 - La página debe tener un campo para inserción de texto con la finalidad de adicionar nuevas palabras al juego, e un botón "Agregar palabra". 
 
 **Capturas**
+Ventana de Inicio o Home.
+https://github.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/blob/master/img/Bienvenida.PNG
