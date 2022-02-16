@@ -20,8 +20,8 @@ Página Web: https://eduardout.github.io/Ahorcado-Oracle-ONE-Challenge/
 **Capturas**
 **Vista previa ventana de inicio o home.**
 
-![Image text](https://raw.githubusercontent.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/master/assets/Bienvenida.PNG)
+![Vista previa ventana de inicio o home.](https://raw.githubusercontent.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/master/assets/Bienvenida.PNG)
 
 **Vista previa ventana del juego.**
 
-![Image text](https://raw.githubusercontent.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/master/assets/Juego.PNG)
+![Vista previa ventana del juego.](https://raw.githubusercontent.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/master/assets/Juego.PNG)
