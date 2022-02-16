@@ -18,10 +18,10 @@ Página Web: https://eduardout.github.io/Ahorcado-Oracle-ONE-Challenge/
 - La página debe tener un campo para inserción de texto con la finalidad de adicionar nuevas palabras al juego, e un botón "Agregar palabra". 
 
 **Capturas**
-Ventana de Inicio o Home.
+**Vista previa ventana de inicio o home.**
 
 ![Image text](https://raw.githubusercontent.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/master/assets/Bienvenida.PNG)
 
-Ventana del Juego.
+**Vista previa ventana del juego.**
 
 ![Image text](https://raw.githubusercontent.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/master/assets/Juego.PNG)
