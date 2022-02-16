@@ -18,13 +18,9 @@ var filtro = "abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
 
 
 campoAgregar.addEventListener("input", function () {
-    
-
         var textoMayusculas = "";
         var palabraIngresada = "";
         var valorCampo = this.value;
-
-
 
         for (var i = 0; i < valorCampo.length; i++) {
             for (var j = 0; j < filtro.length; j++) {
@@ -34,7 +30,6 @@ campoAgregar.addEventListener("input", function () {
                 }
             }
         }
-
         
         /**
          * Una vez obtenida toda la palabra, evalúo si es
