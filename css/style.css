@@ -252,7 +252,7 @@ body
 }
 
 .show-main-content
-.canvas-responsive {
+#ahorcado {
     box-shadow: 0.5em 0.1em 0.5em 0.1em rgba(7, 7, 7, 0.712);
     max-width: 700px;
     width: 100%;
@@ -261,15 +261,9 @@ body
     background-color: inherit;
 }
 
-.canvas-responsive
-#ahorcado {
-    width: inherit;
-    height: inherit;    
-}
-
 @media only screen and (max-width: 738px) {
     .show-main-content
-    .canvas-responsive {
+    #ahorcado {
         height: 290px;
     }
 }
@@ -284,7 +278,7 @@ body
     }
 
     .show-main-content
-    .canvas-responsive {
+    #ahorcado {
         height: 190px;
     }
 }
