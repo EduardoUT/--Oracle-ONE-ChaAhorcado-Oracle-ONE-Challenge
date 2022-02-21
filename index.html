@@ -53,9 +53,9 @@
 
     </header>
 
-    <div id="container">
+    <main id="container">
 
-        <div class="main-content">
+        <article class="main-content">
             <input class="letra-ingresada" id="letra-ingresada" type="text" pattern=".{0,1}"
                 placeholder="Ingresa una letra aquí...">
 
@@ -64,11 +64,9 @@
             </div>
 
             <div class="menu-buttons">
-
-                <div class="letras-erroneas">
-                    <p class="letras-fallidas"></p>
-                </div>
-
+    
+                <p class="letras-erroneas"></p>
+            
                 <button class="btn" id="aleatoria">
                     Aleatoria
                 </button>
@@ -88,15 +86,14 @@
 
             <div class="mensaje-perdiste-hidden">
                 <p>Haz perdido &#128542;</p>
-                <p class="respuesta"></p>
                 <button class="btn" id="cerrar-perdiste">
                     Cerrar
                 </button>
             </div>
 
-        </div>
+        </article>
 
-    </div>
+    </main>
 
     <script src="js/main.js"></script>
     <script src="js/eventos.js"></script>
