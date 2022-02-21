@@ -2,7 +2,7 @@
  * @var pLetrasFallidas:
  * Selector global de elemento p en el DOM HTML.
  */
- var pLetrasFallidas = document.querySelector(".letras-fallidas");
+ var pLetrasFallidas = document.querySelector(".letras-erroneas");
 
  /**
  * @var letrasFallidas:
