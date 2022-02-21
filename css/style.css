@@ -301,15 +301,11 @@ body
 
 .show-main-content
 .letras-erroneas {
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.8em;
-}
-
-.letras-erroneas
-.letras-fallidas {
-    text-align: center;
 }
 
 .show-main-content
