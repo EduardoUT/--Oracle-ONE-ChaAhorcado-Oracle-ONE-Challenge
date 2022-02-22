@@ -5,7 +5,7 @@ Juego del Ahorcado, un Challenge de Oracle One Education y Alura Latam.
 
 Segundo proyecto de Alura Latam, en el que desarrollé un juego de ahorcado con JavaScript, HTML5 y CSS3.
 
-![Challenge Alura Latam + Oracle](https://raw.githubusercontent.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/master/assets/challengeImage.jpg)
+![Challenge Alura Latam + Oracle](https://raw.githubusercontent.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/master/img/assets/challengeImage.jpg)
 
 Página Web: https://eduardout.github.io/Ahorcado-Oracle-ONE-Challenge/
 
@@ -28,8 +28,8 @@ Publicado en el topic: https://github.com/topics/challengeonejuegoahorcado
 **Capturas**
 **Vista previa ventana de inicio o home.**
 
-![Vista previa ventana de inicio o home.](https://raw.githubusercontent.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/master/assets/Bienvenida.PNG)
+![Vista previa ventana de inicio o home.](https://raw.githubusercontent.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/master/img/assets/Bienvenida.PNG)
 
 **Vista previa ventana del juego.**
 
-![Vista previa ventana del juego.](https://raw.githubusercontent.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/master/assets/Juego.PNG)
+![Vista previa ventana del juego.](https://raw.githubusercontent.com/EduardoUT/Ahorcado-Oracle-ONE-Challenge/master/img/assets/Juego.PNG)
