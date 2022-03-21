@@ -57,8 +57,8 @@
     <main id="container">
 
         <div class="main-content">
-            <input class="letra-ingresada" id="letra-ingresada" type="text" pattern=".{0,1}"
-                placeholder="Ingresa una letra aquí...">
+            <input class="letra-ingresada" id="letra-ingresada" type="text" pattern="[A-Z]{1}"
+                placeholder="Ingresa una letra aquí..." minlength="1" maxlength="1">
 
             <canvas id="ahorcado"></canvas>
 
